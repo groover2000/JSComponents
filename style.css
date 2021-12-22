@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #000;
+  background: #b4b4b4;
 }
 
 img {
@@ -32,15 +32,23 @@ img {
 }
 
 .header {
+  width: 100px;
+  height: 20px;
   background: #fff;
   display: block;
   border: 1px solid black;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  cursor: pointer;
 
 }
 
 .content {
   background: #fff;
   margin: 10px;
+
+}
+
+.colorize {
+  background-color: black;
 
 }

@@ -1,7 +1,6 @@
 function spoilerHeaderClick(e) {
   e.preventDefault();
   e.target.compSpoiler.toggle();
-  console.log(e.target)
 }
 
 
@@ -11,9 +10,8 @@ class Spoiler {
   constructor(element) {
     this.element = element;
     element.classList.add('spoiler');
-    const a = element.querySelector('a.header');
+    const a = element.querySelector('button.header');
     a.compSpoiler = this;
-    console.log(this)
     a.addEventListener("click", spoilerHeaderClick);
   }
   toggle() {
@@ -32,5 +30,6 @@ class Spoiler {
 }
 
 
-const spoiler = document.querySelector('.main')
-const spoiler1 = new Spoiler(spoiler)
+const spoiler = document.querySelector('#first')
+// const spoiler1 = new Spoiler(spoiler)
+// spoiler1.shown = false
